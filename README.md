@@ -1,4 +1,5 @@
 # ContainerCraft
+README A COMPLETER 
 
 ContainerCraft est une application de bureau développée avec JavaFX permettant aux utilisateurs de choisir des images Docker pré-faites ou de créer leurs propres images personnalisées, puis de les générer en un simple clic.
 
@@ -75,9 +76,9 @@ Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de 
 
 ## Contact
 
-Si vous avez des questions ou des suggestions, n'hésitez pas à me contacter :
+Si vous avez des questions ou des suggestions, n'hésitez pas à nous contacter :
 
-- Email : votre-email@example.com
-- GitHub : [abidenbach](https://github.com/abidenbach)
+- Email : antoine.bidenbach1@gmail.com / noe.mantilaro1@gmail.com
+- GitHub : [abidenbach](https://github.com/abidenbach) / [mantipark](https://github.com/mantipark)
 
 ---
