@@ -78,6 +78,6 @@ Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de 
 Si vous avez des questions ou des suggestions, n'hésitez pas à me contacter :
 
 - Email : votre-email@example.com
-- GitHub : [votre-utilisateur](https://github.com/votre-utilisateur)
+- GitHub : [abidenbach](https://github.com/abidenbach)
 
 ---
