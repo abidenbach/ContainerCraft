@@ -1,0 +1,70 @@
+/* Général */
+.root {
+    -fx-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    -fx-background-color: #f6f8fa;
+}
+
+/* Contenu principal */
+.main-content {
+    -fx-background-color: #ffffff;
+    -fx-padding: 20px;
+    -fx-background-radius: 6px;
+    -fx-spacing: 20px;
+}
+
+/* Titres */
+.main-title {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #24292e;
+}
+
+/* Champs de texte */
+.text-field {
+    -fx-background-color: #f0f0f0;
+    -fx-padding: 10px;
+    -fx-border-color: #d1d5da;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+    -fx-prompt-text-fill: #888888;
+}
+
+/* Boutons */
+.primary-button {
+    -fx-background-color: #28a745;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 10px 20px;
+    -fx-background-radius: 6px;
+    -fx-border-radius: 6px;
+    -fx-cursor: hand;
+}
+
+.primary-button:hover {
+    -fx-background-color: #21883a;
+}
+
+#loginButton {
+    -fx-background-color: #28a745; /* Vert demandé */
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 10px 20px;
+    -fx-background-radius: 6px;
+    -fx-border-radius: 6px;
+    -fx-cursor: hand;
+}
+
+#loginButton:hover {
+    -fx-background-color: #21883a;
+}
+
+/* Lien de connexion */
+.login-link {
+    -fx-text-fill: #6c757d;
+    -fx-underline: false;
+}
+
+.login-link:hover {
+    -fx-text-fill: #343a40;
+}
+

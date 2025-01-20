@@ -1,0 +1,61 @@
+/* Styles principaux */
+.main-content {
+    -fx-background-color: #ffffff;
+    -fx-padding: 20px;
+    -fx-background-radius: 10px;
+    -fx-spacing: 20px;
+}
+
+/* Titre */
+.main-title {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+}
+
+/* Champs de texte */
+.text-field {
+    -fx-background-color: #f7f7f7;
+    -fx-padding: 10px;
+    -fx-border-color: #cccccc;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-prompt-text-fill: #aaaaaa;
+    -fx-font-size: 14px;
+}
+
+/* Bouton de connexion */
+.login-button {
+    -fx-background-color: #28a745;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 14px;
+    -fx-padding: 10px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-cursor: hand;
+}
+
+.login-button:hover {
+    -fx-background-color: #218838;
+}
+
+/* Lien : Mot de passe oublié */
+.forgot-password-link {
+    -fx-text-fill: #007bff;
+    -fx-underline: true;
+}
+
+.forgot-password-link:hover {
+    -fx-text-fill: #0056b3;
+}
+
+/* Lien : Créer un compte */
+.signup-link {
+    -fx-text-fill: #6c757d;
+    -fx-underline: false;
+}
+
+.signup-link:hover {
+    -fx-text-fill: #343a40;
+}

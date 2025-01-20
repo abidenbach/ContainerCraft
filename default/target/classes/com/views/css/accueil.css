@@ -1,0 +1,132 @@
+/* Styles pour la barre latérale */
+.sidebar {
+    -fx-background-color: #1e1e1e;
+    -fx-padding: 10;
+}
+
+.sidebar-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-padding: 10;
+    -fx-min-width: 150;
+}
+
+/* Styles pour l'en-tête */
+.header {
+    -fx-background-color: #1e1e1e;
+    -fx-padding: 10;
+}
+
+.logo {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+.search-button {
+    -fx-background-color: #3b3b3b;
+    -fx-text-fill: white;
+    -fx-padding: 5 10 5 10;
+}
+
+.signin-button {
+    -fx-background-color: #3b3b3b;
+    -fx-text-fill: white;
+    -fx-padding: 5 10 5 10;
+}
+
+.settings-button {
+    -fx-background-color: transparent;
+    -fx-padding: 5 10 5 10;
+}
+
+/* Styles pour le contenu principal */
+.main-content {
+    -fx-background-color: #1e1e1e;
+    -fx-padding: 20;
+}
+
+.section-title {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+.view-history {
+    -fx-text-fill: #007bff;
+}
+
+.container-illustration {
+    -fx-background-color: transparent;
+    -fx-padding: 20;
+}
+
+.container-text {
+    -fx-fill: white;
+    -fx-font-size: 14px;
+}
+
+.learn-button {
+    -fx-background-color: #3b3b3b;
+    -fx-text-fill: white;
+    -fx-padding: 10;
+    -fx-min-width: 150;
+}
+
+.learning-center {
+    -fx-text-fill: #007bff;
+}
+
+/* Styles pour le pied de page */
+.footer {
+    -fx-background-color: #1e1e1e;
+    -fx-padding: 10;
+}
+
+.status-text {
+    -fx-font-size: 14px;
+    -fx-text-fill: #606060;
+}
+
+.terminal-button {
+    -fx-background-color: #3b3b3b;
+    -fx-text-fill: white;
+    -fx-padding: 5 10 5 10;
+}
+
+/* Styles responsives */
+@media (min-width: 600px) and (min-height: 400px) {
+    .sidebar {
+        -fx-padding: 10;
+    }
+
+    .header {
+        -fx-padding: 10;
+    }
+
+    .main-content {
+        -fx-padding: 20;
+    }
+
+    .footer {
+        -fx-padding: 10;
+    }
+}
+
+@media (min-width: 1200px) and (min-height: 700px) {
+    .sidebar {
+        -fx-padding: 20;
+    }
+
+    .header {
+        -fx-padding: 20;
+    }
+
+    .main-content {
+        -fx-padding: 30;
+    }
+
+    .footer {
+        -fx-padding: 20;
+    }
+}

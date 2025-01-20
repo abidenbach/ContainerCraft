@@ -4,61 +4,53 @@
 <?import javafx.scene.control.Hyperlink?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
-<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 
-<Pane prefHeight="600.0" prefWidth="400.0" style="-fx-background-color: #121212;" 
-      xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" 
+<AnchorPane prefHeight="600.0" prefWidth="400.0" stylesheets="@css/inscription.css"
+      xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1"
       fx:controller="com.containercraft.controllers.InscriptionController">
 
     <children>
-        <!-- Titre principal -->
-        <Text fill="WHITE" layoutX="115.0" layoutY="50.0" text="ContainerCraft">
-            <font>
-                <Font name="Roboto" size="26.0" />
-            </font>
-        </Text>
+        <VBox alignment="CENTER" spacing="20" AnchorPane.leftAnchor="0" AnchorPane.topAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.bottomAnchor="0" styleClass="main-content">
+            <!-- Logo -->
+            <VBox alignment="CENTER" spacing="10">
+                <ImageView fitHeight="60" fitWidth="60" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/CCLogo_png.png" />
+                    </image>
+                </ImageView>
+                <Text text="ContainerCraft" styleClass="main-title" />
+            </VBox>
 
-        <!-- Champ : Nom -->
-        <TextField fx:id="lastNameField" layoutX="50.0" layoutY="100.0" 
-                   prefHeight="36.0" prefWidth="140.0" promptText="Nom *" 
-                   style="-fx-background-color: #1E1E1E; -fx-text-fill: WHITE; -fx-prompt-text-fill: #888888;" />
+            <!-- Champ : Nom -->
+            <TextField fx:id="lastNameField" promptText="Nom *" styleClass="text-field" />
 
-        <!-- Champ : Prénom -->
-        <TextField fx:id="firstNameField" layoutX="210.0" layoutY="100.0" 
-                   prefHeight="36.0" prefWidth="140.0" promptText="Prénom *" 
-                   style="-fx-background-color: #1E1E1E; -fx-text-fill: WHITE; -fx-prompt-text-fill: #888888;" />
+            <!-- Champ : Prénom -->
+            <TextField fx:id="firstNameField" promptText="Prénom *" styleClass="text-field" />
 
-        <!-- Champ : Adresse e-mail -->
-        <TextField fx:id="emailField" layoutX="50.0" layoutY="160.0" 
-                   prefHeight="36.0" prefWidth="300.0" promptText="Adresse e-mail *" 
-                   style="-fx-background-color: #1E1E1E; -fx-text-fill: WHITE; -fx-prompt-text-fill: #888888;" />
+            <!-- Champ : Adresse e-mail -->
+            <TextField fx:id="emailField" promptText="Adresse e-mail *" styleClass="text-field" />
 
-        <!-- Champ : Nom d'utilisateur -->
-        <TextField fx:id="usernameField" layoutX="50.0" layoutY="220.0" 
-                   prefHeight="36.0" prefWidth="300.0" promptText="Nom d'utilisateur *" 
-                   style="-fx-background-color: #1E1E1E; -fx-text-fill: WHITE; -fx-prompt-text-fill: #888888;" />
+            <!-- Champ : Nom d'utilisateur -->
+            <TextField fx:id="usernameField" promptText="Nom d'utilisateur *" styleClass="text-field" />
 
-        <!-- Champ : Mot de passe -->
-        <PasswordField fx:id="passwordField" layoutX="50.0" layoutY="280.0" 
-                       prefHeight="36.0" prefWidth="300.0" promptText="Mot de passe *" 
-                       style="-fx-background-color: #1E1E1E; -fx-text-fill: WHITE; -fx-prompt-text-fill: #888888;" />
+            <!-- Champ : Mot de passe -->
+            <PasswordField fx:id="passwordField" promptText="Mot de passe *" styleClass="text-field" />
 
-        <!-- Champ : Confirmation de mot de passe -->
-        <PasswordField fx:id="confirmPasswordField" layoutX="50.0" layoutY="340.0" 
-                       prefHeight="36.0" prefWidth="300.0" promptText="Confirmation de mot de passe *" 
-                       style="-fx-background-color: #1E1E1E; -fx-text-fill: WHITE; -fx-prompt-text-fill: #888888;" />
+            <!-- Champ : Confirmation de mot de passe -->
+            <PasswordField fx:id="confirmPasswordField" promptText="Confirmation de mot de passe *" styleClass="text-field" />
 
-        <!-- Bouton d'inscription -->
-        <Button fx:id="signupButton" layoutX="125.0" layoutY="400.0" 
-                prefHeight="40.0" prefWidth="150.0" text="S'inscrire" 
-                style="-fx-background-color: #5A189A; -fx-background-radius: 5;" 
-                textFill="WHITE" />
+            <!-- Bouton d'inscription -->
+            <Button fx:id="signupButton" text="S'inscrire" styleClass="primary-button" />
 
-        <!-- Lien pour la connexion -->
-        <Hyperlink fx:id="loginLink" layoutX="100.0" layoutY="460.0" 
-                   onAction="#handleLoginLink" text="Déjà un compte ? Connectez-vous" 
-                   textFill="WHITE" underline="true" />
+            <!-- Lien pour la connexion -->
+            <Hyperlink fx:id="loginLink" onAction="#handleLoginLink" text="Déjà un compte ? Connectez-vous" styleClass="login-link" />
+        </VBox>
     </children>
-</Pane>
+</AnchorPane>
