@@ -34,7 +34,7 @@ public class ContainerCraft extends Application {
      */
     private void initializeStage(Stage primaryStage) throws IOException {
         // Charge la vue de connexion
-        Parent root = loadFXML("/com/views/accueil.fxml");
+        Parent root = loadFXML("/com/views/connexion.fxml");
 
         // Configure la scène
         Scene scene = new Scene(root);

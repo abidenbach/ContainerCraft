@@ -11,6 +11,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Text?>
+<?import javafx.scene.control.Label?>
 
 <AnchorPane prefHeight="600.0" prefWidth="400.0" stylesheets="@css/connexion.css"
       xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1"
@@ -30,6 +31,7 @@
             <Text text="ContainerCraft" styleClass="main-title" />
 
             <!-- Champs d'identification -->
+            <Label fx:id="errConnexion" text="Mot de passe ou identifiant incorrect" visible="false" style="-fx-text-fill: red;" />
             <TextField fx:id="usernameField" promptText="Adresse e-mail ou nom d'utilisateur *" styleClass="text-field" maxWidth="300.0" />
             <PasswordField fx:id="passwordField" promptText="Mot de passe *" styleClass="text-field" maxWidth="300.0" />
 
