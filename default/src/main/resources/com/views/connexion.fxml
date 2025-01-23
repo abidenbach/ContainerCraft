@@ -31,8 +31,8 @@
             <Text text="ContainerCraft" styleClass="main-title" />
 
             <!-- Champs d'identification -->
-            <Label fx:id="errConnexion" text="Mot de passe ou identifiant incorrect" visible="false" style="-fx-text-fill: red;" />
-            <TextField fx:id="usernameField" promptText="Adresse e-mail ou nom d'utilisateur *" styleClass="text-field" maxWidth="300.0" />
+            <Label fx:id="errIDMDP" text="Mot de passe ou identifiant incorrect" visible="false" style="-fx-text-fill: red;" />
+            <TextField fx:id="usernameField" promptText="Adresse e-mail *" styleClass="text-field" maxWidth="300.0" />
             <PasswordField fx:id="passwordField" promptText="Mot de passe *" styleClass="text-field" maxWidth="300.0" />
 
             <!-- Case à cocher et label -->
@@ -42,13 +42,8 @@
             </HBox>
 
             <!-- Bouton de connexion -->
+            <Label fx:id="errConnexion" text="Mot de passe ou identifiant incorrect" visible="false" style="-fx-text-fill: red;" />
             <Button fx:id="loginButton" text="Connexion" styleClass="login-button" maxWidth="200.0" />
-
-            <!-- Liens : Mot de passe oublié et création de compte -->
-            <VBox alignment="CENTER" spacing="10">
-                <Hyperlink fx:id="forgotPasswordLink" text="Mot de passe oublié ?" styleClass="forgot-password-link" />
-                <Hyperlink fx:id="signupLink" onAction="#handleSignupLink" text="Pas encore inscrit ? Créez un compte" styleClass="signup-link" />
-            </VBox>
         </VBox>
     </children>
 </AnchorPane>

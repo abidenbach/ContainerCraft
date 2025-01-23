@@ -1,3 +1,2 @@
-com\containercraft\controllers\InscriptionController.class
+com\containercraft\models\LDAPService.class
 com\containercraft\ContainerCraft.class
-com\containercraft\controllers\ConnexionController.class
